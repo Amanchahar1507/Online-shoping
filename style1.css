@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --navbar-height: 60px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgb(101, 106, 111);
+    z-index: -3;
+
+}
+
+#navbar .logo img {
+    height: 45px;
+    width: 45px;
+    margin: 10px;
+
+}
+
+#navbar img:hover {
+    transform: scale(2);
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul .item {
+    display: flex;
+    margin: 5px;
+    text-align: center;
+    flex-direction: row;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+}
+
+a:hover {
+    background-color: aqua;
+}
+
+.HOME {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    padding: 50px;
+
+
+}
+
+.HOME{
+    position: relative;
+}
+.HOME::before {
+    content: "";
+    position: absolute;
+    background: url(image5.jpg);
+    height: 425px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+.HOME h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 40px
+}
+
+.HOME p {
+    text-align: center;
+    padding: 5px;
+
+}
+
+.HOME .btn {
+    border-radius: 6px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.HOME .btn:hover {
+    background-color: antiquewhite;
+    transform: scale(1.4);
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.SERVICE {
+    display: flex;
+}
+
+.SERVICE .catering {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.SERVICE .catering img {
+    height: 150px;
+    width: 150px;
+}
+
+.SERVICE .catering h2 {
+    font-size: 30px;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.SERVICE .catering p {
+    font-size: 10px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.SERVICE .catering:hover {
+    transform: scale(1.2);
+
+}
+
+.SERVICE .bulk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.SERVICE .bulk img {
+    height: 150px;
+    width: 150px;
+
+}
+
+.SERVICE .bulk h2 {
+    font-size: 30px;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.SERVICE .bulk p {
+    font-size: 10px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.SERVICE .bulk:hover {
+    transform: scale(1.2);
+
+}
+
+.SERVICE .delivery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 15px;
+    margin: 20px;
+
+}
+
+.SERVICE .delivery img {
+    height: 150px;
+    width: 150px;
+
+}
+
+.SERVICE .delivery h2 {
+    font-size: 30px;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+.SERVICE .delivery p {
+    font-size: 10px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.SERVICE .delivery:hover {
+    transform: scale(1.2);
+
+}
+
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.ABOUT{
+    position: relative;
+}
+
+.ABOUT:before {
+   content:"";
+   position:absolute;
+    height: 100%;
+    width: 100%;
+    background: url(image8.jpg);
+    z-index: -1;
+    opacity: 0.5;
+
+}
+.ABOUT{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ABOUT .google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ABOUT .google img {
+    margin: 20px;
+    padding: 20px;
+    height: 70px;
+    width: 70px;
+}
+
+.ABOUT .google img:hover {
+    transform: scale(1.5);
+    background-color: azure;
+}
+
+
+.ABOUT .twitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ABOUT .twitter img {
+    margin: 2opx;
+    padding: 20px;
+    height: 70px;
+    width: 70px;
+}
+
+.ABOUT .twitter img:hover {
+    transform: scale(1.5);
+    background-color: azure;
+}
+
+
+.ABOUT .microsoft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ABOUT .microsoft img {
+    margin: 20px;
+    padding: 20px;
+    height: 70px;
+    width: 70px;
+}
+
+.ABOUT .microsoft img:hover {
+    transform: scale(1.5);
+    background-color: azure;
+}
+
+
+.ABOUT .paypal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ABOUT .paypal img {
+    margin: 20px;
+    padding: 20px;
+    height: 70px;
+    width: 70px;
+}
+
+.ABOUT .paypal img:hover {
+    transform: scale(1.5);
+    background-color: azure;
+}
+
+
+.ABOUT .facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ABOUT .facebook img {
+    margin: 20px;
+    padding: 20px;
+    height: 70px;
+    width: 70px;
+}
+
+.ABOUT .facebook img:hover {
+    transform: scale(1.5);
+    background-color: azure;
+}
+
+.CONTACT{
+    position:relative;
+}
+.CONTACT::before{
+    content:"";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity:0.7;
+    background: url(image21.jpg) no-repeat center center/cover;
+   
+}
+
+.CONTACT h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.CONTACT .contact {
+   display:flex;
+   flex-direction: column;
+
+}
+
+.CONTACT .contact .send {
+    display: flex;
+    flex-direction: column;
+    margin: 4px;
+    align-items: center;
+}
+
+.CONTACT .contact .send label {
+    font-size: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.CONTACT .contact .send input {
+    font-size: 10px;
+    padding-right: 170px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.CONTACT .contact .send input:hover{
+    background-color: rgb(203, 234, 234);
+    transform: scale(1.2);
+}
+.CONTACT .contact .send textarea:hover{
+    background-color: rgb(203, 234, 234);
+    transform: scale(1.2);
+}
+
+.CONTACT .contact button {
+    font-size: 15px;
+   display:block;
+   margin-left: 400px;
+   margin-right: 400px;
+  background-color: red;
+}
+.CONTACT .contact button:hover{
+    transform: scaleX(1.2);
+    background-color: beige;
+}
+footer .center{
+    font-size: 25px;
+   
+    
+    margin-top: 15px;
+}
+@media (max-width:1170px) {
+    /*navbars*/
+    #navbar{
+        flex-direction: column;
+    }
+    #navbar ul li a{
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    /*home section*/
+    .HOME{
+        height:280px;
+        margin:25px;
+        padding:30px;
+    }
+    .HOME h1{
+        padding: 9px;
+        font-size: 20px;
+    }
+    .HOME p{
+        padding:0px;
+    }
+    .HOME .btn {
+        border-radius: 10px;
+        margin: 2px;
+        padding: 2px;
+    }
+
+    /*services section*/
+    .SERVICE{
+        flex-direction: column;
+        margin: 9px;
+        padding: 5px;
+    }
+    .service{
+        margin-top: 60px;
+        margin-bottom: -15px;
+    }
+
+    /*about us*/
+    .about{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+    .ABOUT .google img {
+        margin: 2px;
+        padding: 2px;
+        height: 30px;
+        width: 40px;
+    }   
+    .ABOUT .twitter img {
+        margin: 2px;
+        padding: 2px;
+        height: 30px;
+        width: 40px;
+    }   
+    .ABOUT .microsoft img {
+     margin: 2px;
+     padding: 2px;
+     height: 30px;
+     width: 40px;
+    }
+    .ABOUT .paypal img {
+        margin: 2px;
+        padding: 2px;
+        height: 30px;
+        width: 40px;
+    } 
+    .ABOUT .facebook img {
+        margin: 2px;
+        padding: 2px;
+        height: 30px;
+        width: 40px;
+    }
+    footer .center {
+        font-size: 10px;
+        margin-top: 16px;
+        margin-left: 10px;
+        padding-left: 50px;
+    } 
+    .CONTACT .contact button{
+        margin-left: 0px;
+         margin-right: 0px;
+    }
+}
